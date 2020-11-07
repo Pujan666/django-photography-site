@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
-import views
+import api.views
 
 urlpatterns = [
 	url(r'^categories/(?P<categoryId>[0-9]+)$', views.CategoryImageList.as_view()),
