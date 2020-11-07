@@ -25,7 +25,7 @@ SECRET_KEY = 'j6w=*ek5do9rm9-*c33_)19g%+%4*+a&h&)x=_@v#l+6q3$p!i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['indesigngallery.herokuapp.com]
+ALLOWED_HOSTS = ['indesigngallery.herokuapp.com']
 
 
 # Application definition
