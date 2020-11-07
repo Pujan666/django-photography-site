@@ -51,14 +51,14 @@ class category(models.Model):
 					for image in item.imageCategory.filter(status=1)[:5]:
 						try:
 							tempImages.append(image)
-						except Exception, e:
+						except Exception as e:
 							pass
 					if tempImages:
 					   result.append({
 					   	'category':item,
 					   	'imageSet':tempImages
 					   	})
-				except Exception, e:
+				except Exception as e:
 					pass
 			return result
 		except Exception, e:
