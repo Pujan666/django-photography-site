@@ -25,7 +25,7 @@ SECRET_KEY = 'j6w=*ek5do9rm9-*c33_)19g%+%4*+a&h&)x=_@v#l+6q3$p!i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['indesigngallery.herokuapp.com]
 
 
 # Application definition
@@ -121,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_ROOT = ''
+STATIC_ROOT = 'static'
 
 STATIC_URL = '/static/'
 
