@@ -144,4 +144,4 @@ BASE_BACKGROUND_IMAGE_STATIC_PATH = '/static/photos/img/bg.jpg'
 IMAGE_PAGINATION_COUNT = 6
 
 
-django_heroku.settings(locals())
+
