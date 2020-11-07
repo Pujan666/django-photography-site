@@ -5,7 +5,6 @@ from rest_framework import status
 from api.models import get_category_list, get_category_image_list, get_feed_activity_list, post_subscribe
 
 class CategoriesList(APIView):
-	Global CategorySerializer
 	serializer_class = CategorySerializer
 
 	def get(self, request, *args, **kwargs):
