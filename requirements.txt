@@ -7,4 +7,3 @@ sorl-thumbnail==12.3
 gunicorn
 django-heroku
 serializers
-rest_framework
