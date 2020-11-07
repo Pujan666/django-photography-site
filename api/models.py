@@ -45,8 +45,8 @@ def frame_image_details(imageObj):
 		temp['title'] = imageObj.title
 		temp['image'] = settings.WEBSITE_BASE_DOMAIN +get_thumbnail(imageObj.image, '600x400', crop='center', quality=99).url
 		return temp
-	except Exception, e:
-		print e
+	except Exception as e:
+		print (e)
 		return None
 		
 def get_category_list():
@@ -66,7 +66,7 @@ def get_category_list():
 			'status':True,
 			'details':result
 		}
-	except Exception, e:
+	except Exception as e:
 		return {
 			'status':False,
 			'details':str(e),
@@ -96,7 +96,7 @@ def get_category_image_list(request, categoryId):
 				'items':result
 			}
 		}
-	except Exception, e:
+	except Exception as e:
 		return {
 			'status':False,
 			'details':str(e),
