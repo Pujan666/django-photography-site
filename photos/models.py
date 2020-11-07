@@ -62,7 +62,8 @@ class category(models.Model):
 					pass
 			return result
 		except Exception as e:
-			print e #logger can be configured her
+			print e as e 
+				#logger can be configured her
 			return []
 
 class Image(models.Model):
