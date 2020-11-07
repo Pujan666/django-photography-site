@@ -130,5 +130,5 @@ class Image(models.Model):
 																page_data=pageData)
 			return result
  		except  Exception as e:
-			print e
+				print (e)
 			return {}
