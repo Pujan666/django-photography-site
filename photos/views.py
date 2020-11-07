@@ -72,14 +72,14 @@ def imageView(request, id):
 			'baseDomain':baseDomain,
 			'data':data
 		})
-	except Exception, e:
+	except Exception as e:
 		return render(request, 'photos/err/500.html', {
 			'title':title,
 			'description':description,
 			'author':author,
 			'keywords':keywords
 		})
-	except Image.DoesNotExist, e:
+	except Image.DoesNotExist as e:
 		return render(request, 'photos/err/404.html', {
 			'title':title,
 			'description':description,
