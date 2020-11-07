@@ -1,1 +1,1 @@
-web: gunicorn photoshare.wsgi
+web: gunicorn django_photography_site.wsgi
