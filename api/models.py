@@ -28,7 +28,7 @@ def get_feed_activity_list(request):
 				'items':result
 			}
 		}
-	except Exception, e:
+	except Exception as e:
 		return {
 			'status':False,
 			'details':str(e),
@@ -116,7 +116,7 @@ def device_entry(request):
 			'status':True,
 			'details':deviceObj
 		}
-	except Exception, e:
+	except Exception as e:
 		return {
 			'status':False,
 			'details':str(e),
@@ -138,7 +138,7 @@ def post_subscribe(request):
 				'status':True,
 				'details':"Email has registered succesfully"
 			}
-	except Exception, e:
+	except Exception as e:
 		return {
 			'status':False,
 			'details':str(e),
