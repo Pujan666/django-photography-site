@@ -61,7 +61,7 @@ class category(models.Model):
 				except Exception as e:
 					pass
 			return result
-		except Exception, e:
+		except Exception as e:
 			print e #logger can be configured her
 			return []
 
