@@ -126,9 +126,9 @@ class Image(models.Model):
 			paginationData = Paginator(categoryObj.imageCategory.filter(status=1), settings.IMAGE_PAGINATION_COUNT)
 			pageData = paginationData.page(int(request_data.get('page', 1)))
 			result['imageSet'] = pageData
-			result['paginationData'] = self.get_pagination_data(pagination_data=paginationData, 
-			page_data=(pageData)
+			result['paginationData'] = self.get_pagination_data(pagination_data=paginationData,page_data=pageData)
 			return result
+									    
  		except  Exception as e:
 				print (e)
 			return {}
