@@ -129,6 +129,6 @@ class Image(models.Model):
 			result['paginationData'] = self.get_pagination_data(pagination_data=paginationData, 
 																page_data=pageData)
 			return result
- 		except  Exception, e:
+ 		except  Exception as e:
 			print e
 			return {}
